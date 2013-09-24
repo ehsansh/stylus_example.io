@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  margin: 10px 0 0 20px;
+}
+menu {
+  list-style-type: none;
+}
+menu:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+menu li {
+  margin-left: 2px;
+  float: left;
+  position: relative;
+}
+menu li:hover > menu {
+  display: block;
+}
+menu li:hover > a {
+  background-color: #e22;
+}
+menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 14px;
+  background-color: #ee8720;
+  display: block;
+  white-space: nowrap;
+}
+menu li li {
+  float: none;
+  margin-left: 0;
+}
+menu li li menu {
+  left: 100%;
+  top: 0;
+}
+menu li menu {
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  left: 0;
+  top: 100%;
+}

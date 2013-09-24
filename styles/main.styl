@@ -1,0 +1,40 @@
+*
+	padding 0
+	margin 0
+nav
+	margin 10px 0 0 20px	
+
+menu
+	list-style-type none
+	&:after
+		content " "
+		clear both
+		display block
+	li
+		margin-left 2px	
+		float left		
+		position relative
+		&:hover > menu
+			display block
+		&:hover > a
+			background-color #e22
+		a
+			text-decoration none
+			color white
+			padding 7px 14px
+			background-color hsl(30, 86%, 53%)
+			display block
+			white-space nowrap 
+		li
+			float none
+			margin-left 0
+			menu
+				left 100%
+				top 0
+		menu
+			display none
+			position absolute
+			min-width 100%
+			left 0
+			top 100%
+		
